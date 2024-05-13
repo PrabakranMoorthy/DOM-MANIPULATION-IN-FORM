@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <Center><h1 id="title">Dom Manipulation in form</h1></Center>
+    <center><p id="description">This is the task for DOM manipulation</p></center>
+    <div class="packed">
+      <div class="form">
+        <form id="form"  onsubmit="added(event)">
+            <div class="form-group">
+
+
+          <label >FirstName  &nbsp;&nbsp;</label>
+          <input id="FirstName" type="text" placeholder="Firstname" required /><br><br><br>
+          <label> LastName  &nbsp;&nbsp;</label>
+          <input id="last-name" type="text" placeholder="Lastname" required /><br><br><br>
+          <label> Pincode &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <input id="pincode"  placeholder="pincode" type="text" required/><br><br><br>
+          <div class="radios">
+            <label id="gender">Gender  :&nbsp;&nbsp;</label>          
+          <input id="gender" name ="gender" value="Male" type="radio" required>
+          <label>Male</label>
+          <input id="gender" name ="gender" value="Female" type="radio" required>
+          <label>Female</label><br><br><br>
+          </div>
+          <label> Address &nbsp;&nbsp;&nbsp;&nbsp;</label>
+          <textarea name="" id="address" placeholder="Enter the address"></textarea><br><br><br>
+          <label> Food &nbsp;&nbsp;</label>
+          <select  id="food" required>
+            <option value="Biriyani">Biriyani</option>
+            <option value="Kuska">kuska</option>
+            <option value="Chicken pakoda">Chicken pakoda</option>
+             <option value="mutton biriyani">mutton biriyani</option>
+              <option value="Chicken rice">Chicken rice</option>
+          </select><br><br><br>
+          <label>  State  &nbsp;&nbsp;&nbsp;&nbsp; </label>
+          <input id="state" type="text" required /><br><br><br>
+          <label> Country &nbsp;&nbsp;</label>
+          <input id="country" type="Text"  required/><br><br><br>
+          <input class="btn btn-primary" type="submit" id="submit" value="submit">
+        </div>
+        </form>
+      </div>
+      <div >
+        <br><br>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Firstname&nbsp;&nbsp;</th>
+            <th>Lastname &nbsp;&nbsp;</th>
+            <th>Pincode &nbsp;&nbsp;</th>
+            <th>Gender &nbsp;&nbsp;</th>
+            <th>Address &nbsp;&nbsp;</th>
+            <th>Food &nbsp;&nbsp;</th>
+            <th>State &nbsp;&nbsp;</th>
+            <th>Country &nbsp;&nbsp;</th>
+              </tr>
+
+            </thead>
+            <tbody id="entries">
+
+  <!-- Adding the dynamic tr tag -->
+            </tbody>
+
+
+
+          </table>
+
+      </div>
+
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  </body>
+</html>
